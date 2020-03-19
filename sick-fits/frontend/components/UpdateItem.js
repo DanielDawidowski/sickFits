@@ -94,7 +94,7 @@ class UpdateItem extends Component {
                                     </fieldset>
                                 </Form>
                             )}
-                    </Mutation>
+                        </Mutation>
                     )
                 }}
             </Query>
