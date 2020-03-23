@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import RemoveFromCart from './RemoveFromCart';
 import formatMoney from '../lib/formatMoney';
 
 const CartItemStyles = styled.li`
@@ -31,10 +32,11 @@ const CartItem = ({ cartItem }) => (
                 </em>
             </p>
         </div>
+        <RemoveFromCart id={cartItem.id}/>
     </CartItemStyles>
 )
 
-CartItem.PropTypes = {
+CartItem.propTypes = {
     cartItem: PropTypes.object.isRequired,
 }
 
